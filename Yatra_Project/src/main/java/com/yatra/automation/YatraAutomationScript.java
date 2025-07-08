@@ -31,6 +31,20 @@ public class YatraAutomationScript {
 		
 		wd.manage().window().maximize();
 		
+		By departureFromlocator=By.xpath("//input[@id='input-with-icon-adornment']");
+		
+		WebElement DepartureFrom=wait.until(ExpectedConditions.elementToBeClickable(departureFromlocator));
+		
+		DepartureFrom.sendKeys("Pune");
+		
+		By GoingtoLocator=By.xpath("//input[@id='input-with-icon-adornment']");
+		
+		WebElement GoingtTo=wait.until(ExpectedConditions.elementToBeClickable(GoingtoLocator));
+		
+		GoingtTo.sendKeys("Kolkata");
+		
+		
+		
 		//wd.findElement(By.xpath("//div[@aria-label=\"Departure Date inputbox\" and @role=\"button\"]")).click();
 		
 		By depatureDatelocator=By.xpath("//div[@aria-label=\"Departure Date inputbox\" and @role=\"button\"]");
