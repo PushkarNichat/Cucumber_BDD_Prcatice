@@ -11,15 +11,22 @@ public class LearnArrayList {
 		
 		list.add("Chetna");
 		list.add("Prajwal");
+		
 		list.add("Abhinav");
 		list.add("Vishakha");
 		
-		list.remove(1);
-		System.out.println(list);
+		for(String names : list) {
+			
+			System.out.println("using for each loop " + names);
+			
+		}
 		
-		list.set(0, "Jai shreeRam");
-		
-		System.out.println(list);
+//		list.remove(1);
+//		System.out.println(list);
+//		
+//		list.set(0, "Jai shreeRam");
+//		
+//		System.out.println(list);
 	}
 
 }
